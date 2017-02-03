@@ -2,26 +2,27 @@ $(function(){
 $(".parentnew").show();
 $(".parentactive").hide();
 $(".parentexpired").hide();
-$(".expiredlink").click(function(e){
+$(".li_2 a").click(function(e){
 e.preventDefault();
+var id = $(this).attr('id');
+if(id=="new"){
+$(".parentnew").show();
+$(".parentactive").hide();  
+$(".parentexpired").hide();
+$(".filter").show();
+}
+else if(id=="active"){
+$(".parentactive").show();
+$(".parentexpired").hide();
+$(".parentnew").hide();
 $(".filter").hide();
+}
+else{
 $(".parentexpired").show();
 $(".parentnew").hide();
 $(".parentactive").hide();
-});
-$(".activelink").click(function(e){
-e.preventDefault()
 $(".filter").hide();
-$(".parentactive").show();;
-$(".parentexpired").hide();
-$(".parentnew").hide();
-});
-$(".newlink").click(function(e){
-e.preventDefault();
-$(".filter").show();
-$(".parentnew").show();
-$(".parentexpired").hide();
-$(".parentactive").hide();
+}
 });
 (function( $ ) {
 $.sortByDate = function( elements, order ) {
@@ -46,7 +47,6 @@ return a.time > b.time;
 return b.time > a.time;
 }
 });
-console.log(">>>>>>>>>>>>>>>>>>>.sorted",sorted)
 return sorted;
 };
 $(function() {
@@ -54,7 +54,6 @@ var $newer = $( "#newer" ),
 $older = $( "#older" ),
 $content = $( "#posts" ),
 $elements = $( ".post" );
-
 $newer.click(function() {
 var elements = $.sortByDate( $elements, "DESC" );
 var html = "";
