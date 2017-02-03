@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Bootstrap Example</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans|Ubuntu+Condensed|Yanone+Kaffeesatz" rel="stylesheet">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <link href="psd.css" rel="stylesheet" type="text/css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <script src="psd.js"></script>
+   </head>
+   <body>
+      <div class="container-fluid background">
+         <div class="row">
+            <div class="col-xs-12">
+               <ul class="list-inline">
+                  <li>
+                     <h2 class="h2size"><span class="glyphicon glyphicon-menu-hamburger" style="color:#0080ff;"></span></h2>
+                  </li>
+                  <li class="nav-item">
+                     <h1 style="color:White;">&emsp;My passes</h1>
+                  </li>
+               </ul>
+               <div id="filters" class="filter" style="padding-left: 17px;">
+                  <span class="glyphicon glyphicon-chevron-up" style="color:#0080ff;" id="newer"></span>
+                  <span class="glyphicon glyphicon-chevron-down" style="color:#0080ff;" id="older"></span>
+               </div>
+            </div>
+         </div>
+         <ul class='nav nav-tabs'>
+            <li class="li_2 newlink">
+               <a href='#'>NEW</a>
+            </li>
+            <li class="li_2 activelink">
+               <a href='#'>ACTIVE</a>
+            </li>
+            <li class="li_2 expiredlink">
+               <a href='#'>EXPIRED</a>
+            </li>
+         </ul>
+      </div>
+      <!--  ------- New -------------------- -->
+      <div class="parentnew" id="posts">
+         <div class="div1 post">
+            <div class="media">
+               <div class="pull-left" >
+                  <img style="width:108px;" class="img-responsive img" src="images/test.png">
+               </div>
+               <div class="media-body">
+                  <div class="padding">
+                     <div class="row" >
+                        <div class="col-xs-6">
+                           <h3 class="media-heading">Gym A</h3>
+                        </div>
+                        <div class="col-xs-6 ">
+                           <p class="text-center color shift">Day pass</p>
+                        </div>
+                     </div>
+                     <div class="margin"> <img src="images/e.jpg" height="15px";>
+                        <span>Zeamo Partner </span>
+                     </div>
+                     <p class="color padding1"> <img src="images/layer_31.png" height="15px"> &nbsp; 5555 Grapes Rd, San Diego, CA 92510 </p>
+                     <br>
+                     <div class="row 123">
+                        <div class="col-xs-6">
+                           <h4 class="media-heading color">2.1 mi</h4>
+                        </div>
+                        <div class="col-xs-6">
+                           <p class="text-center left"><span class="color">Use by:</span><time>6/2/2017</time></p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <hr>
+         <div class="div2 post">
+            <div class="media">
+               <div class="pull-left" >
+                  <img style="width:108px;" class="img-responsive" src="images/test.png">
+               </div>
+               <div class="media-body">
+                  <div class="padding">
+                     <div class="row" >
+                        <div class="col-xs-6">
+                           <h3 class="media-heading">Aqua Gym A</h3>
+                        </div>
+                        <div class="col-xs-6 ">
+                           <p class="text-center color shift">Night pass</p>
+                        </div>
+                     </div>
+                     <p class="color padding1"> <img src="images/layer_31.png" height="15px"> &nbsp; 5555 Peaches St, San Diego, CA 94720 </p>
+                     <br><br>
+                     <div class="row" >
+                        <div class="col-xs-6">
+                           <h4 class="media-heading color">3.2 mi</h4>
+                        </div>
+                        <div class="col-xs-6">
+                           <p class="text-center left"><span class="color">Use by:</span><time>6/2/2018</time></p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <hr>
+         <div class="div2 post">
+            <div class="media">
+               <div class="pull-left" >
+                  <img style="width:108px;" class="img-responsive" src="images/test.png">
+               </div>
+               <div class="media-body">
+                  <div class="padding">
+                     <div class="row" >
+                        <div class="col-xs-6">
+                           <h3 class="media-heading">Aqua Gym</h3>
+                        </div>
+                        <div class="col-xs-6 ">
+                           <p class="text-center color shift">Day pass</p>
+                        </div>
+                     </div>
+                     <p class="color padding1"> <img src="images/layer_31.png" height="15px"> &nbsp; 5555 Peaches St, San Diego, CA 94720 </p>
+                     <br><br>
+                     <div class="row" >
+                        <div class="col-xs-6">
+                           <h4 class="media-heading color">2.1 mi</h4>
+                        </div>
+                        <div class="col-xs-6">
+                           <p class="text-center left"><span class="color">Use by:</span><time>6/2/2015</time></p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!--  ------- Active-------------------- -->
+      <div class="parentactive">
+         <div class="div1">
+            <div class="media">
+               <div class="pull-left" >
+                  <img style="width:159px;" class="img-responsive img" src="images/image1.jpg">
+               </div>
+               <div class="media-body">
+                  <div class="padding">
+                     <div class="row" >
+                        <div class="col-xs-6">
+                           <h3 class="media-heading">Any Time Fitness</h3>
+                        </div>
+                        <div class="col-xs-6 ">
+                           <p class="text-center color shift">Day pass</p>
+                        </div>
+                     </div>
+                     <div class="margin"> <img src="images/e.jpg" height="15px";>
+                        <span>Zeamo Partner </span>
+                     </div>
+                     <p class="color padding1"> <img src="images/layer_31.png" height="15px"> &nbsp;  Plot No 34-A Sector 51, Noida, 201301 </p>
+                     <br>
+                     <div class="row 123">
+                        <div class="col-xs-6">
+                           <h4 class="media-heading color">3 mi</h4>
+                        </div>
+                        <div class="col-xs-6">
+                           <p class="text-center left"><span class="color">Location:</span><time>Noida</time></p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <hr>
+         <div class="div2">
+            <div class="media">
+               <div class="pull-left" >
+                  <img style="width:159px;" class="img-responsive" src="images/image2.jpg">
+               </div>
+               <div class="media-body">
+                  <div class="padding">
+                     <div class="row" >
+                        <div class="col-xs-6">
+                           <h3 class="media-heading">Addiction GYM</h3>
+                        </div>
+                        <div class="col-xs-6 ">
+                           <p class="text-center color shift">Night pass</p>
+                        </div>
+                     </div>
+                     <p class="color padding1"> <img src="images/layer_31.png" height="15px"> &nbsp;  Tulip Shopping Centre, Sector 48, Delhi. </p>
+                     <br><br>
+                     <div class="row" >
+                        <div class="col-xs-6">
+                           <h4 class="media-heading color">2.5 mi</h4>
+                        </div>
+                        <div class="col-xs-6">
+                           <p class="text-center left"><span class="color">Location:</span><time>Delhi</time></p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!--  ------- Expired-------------------- -->
+      <div class="parentexpired">
+         <div class="div1">
+            <div class="media">
+               <div class="pull-left" >
+                  <img style="width:159px;" class="img-responsive img" src="images/image3.jpg">
+               </div>
+               <div class="media-body">
+                  <div class="padding">
+                     <div class="row" >
+                        <div class="col-xs-6">
+                           <h3 class="media-heading">Gold's Gym</h3>
+                        </div>
+                        <div class="col-xs-6 ">
+                           <p class="text-center color shift">Day pass</p>
+                        </div>
+                     </div>
+                     <div class="margin"> <img src="images/e.jpg" height="15px";>
+                        <span>Zeamo Partner </span>
+                     </div>
+                     <p class="color padding1"> <img src="images/layer_31.png" height="15px"> &nbsp; B-2, Kirtimaan Plaza, Sector 30, Noida </p>
+                     <br>
+                     <div class="row 123">
+                        <div class="col-xs-6">
+                           <h4 class="media-heading color">2.8 mi</h4>
+                        </div>
+                        <div class="col-xs-6">
+                           <p class="text-center left"><span class="color">Location</span><time>Noida</time></p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <hr>
+         <div class="div2">
+            <div class="media">
+               <div class="pull-left" >
+                  <img style="width:159px;" class="img-responsive" src="images/image4.jpg">
+               </div>
+               <div class="media-body">
+                  <div class="padding">
+                     <div class="row" >
+                        <div class="col-xs-6">
+                           <h3 class="media-heading">Fitness Mantra</h3>
+                        </div>
+                        <div class="col-xs-6 ">
+                           <p class="text-center color shift">Day pass</p>
+                        </div>
+                     </div>
+                     <p class="color padding1"> <img src="images/layer_31.png" height="15px"> &nbsp; C-4, Block C,Sector 51, Next to SRS </p>
+                     <br><br>
+                     <div class="row" >
+                        <div class="col-xs-6">
+                           <h4 class="media-heading color">3.1 mi</h4>
+                        </div>
+                        <div class="col-xs-6">
+                           <p class="text-center left"><span class="color">Location:</span><time>Delhi</time></p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </body>
+</html>
